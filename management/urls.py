@@ -18,14 +18,14 @@ urlpatterns = [
     path('proveedor/', provider, name="provider"),
     path('proveedor/<str:modal>/<int:pk>', provider_modal, name="provider-modal"),
     path('usuario/', user, name="user"),
-    path('usuario/<str:modal>/<int:pk>', user_modal, name="user-modal"),
+    # path('usuario/<str:modal>/<int:pk>', user_modal, name="user-modal"),
     
     path('compra/', buy, name="buy"),
     path('compra/detalle/<int:pk>', detail_buy, name="buy-detail"),
     
     path('venta/', sale, name="sale"),
     path('venta/detalle/<int:pk>', detail_sale, name="sale-detail"),
-    path('registro/', registro , name='registro' ),
+    # path('registro/', registro , name='registro' ),
 
 ]
 
